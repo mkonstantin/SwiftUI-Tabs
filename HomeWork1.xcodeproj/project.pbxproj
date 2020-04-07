@@ -15,6 +15,12 @@
 		B5B0290F2438EEEA00FA5574 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5B0290D2438EEEA00FA5574 /* LaunchScreen.storyboard */; };
 		B5B0291A2438EEEA00FA5574 /* HomeWork1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B029192438EEEA00FA5574 /* HomeWork1Tests.swift */; };
 		B5B029252438EEEA00FA5574 /* HomeWork1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B029242438EEEA00FA5574 /* HomeWork1UITests.swift */; };
+		B5B029342438F3CF00FA5574 /* MyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B029332438F3CF00FA5574 /* MyListView.swift */; };
+		B5B029362438F40E00FA5574 /* MyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B029352438F40E00FA5574 /* MyListViewModel.swift */; };
+		B5ED037F243CB2BD00695E5C /* CarDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED037E243CB2BD00695E5C /* CarDetail.swift */; };
+		B5ED0381243CC0E900695E5C /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED0380243CC0E900695E5C /* ButtonView.swift */; };
+		B5ED0386243CC3BF00695E5C /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED0385243CC3BF00695E5C /* WelcomeView.swift */; };
+		B5F2250524397C4E003232F2 /* MyListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2250424397C4E003232F2 /* MyListViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		B5B029202438EEEA00FA5574 /* HomeWork1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeWork1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B029242438EEEA00FA5574 /* HomeWork1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWork1UITests.swift; sourceTree = "<group>"; };
 		B5B029262438EEEA00FA5574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5B029332438F3CF00FA5574 /* MyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListView.swift; sourceTree = "<group>"; };
+		B5B029352438F40E00FA5574 /* MyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListViewModel.swift; sourceTree = "<group>"; };
+		B5ED037E243CB2BD00695E5C /* CarDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetail.swift; sourceTree = "<group>"; };
+		B5ED0380243CC0E900695E5C /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		B5ED0385243CC3BF00695E5C /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		B5F2250424397C4E003232F2 /* MyListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +114,9 @@
 				B5B029022438EEE800FA5574 /* AppDelegate.swift */,
 				B5B029042438EEE800FA5574 /* SceneDelegate.swift */,
 				B5B029062438EEE800FA5574 /* ContentView.swift */,
+				B5ED0383243CC30400695E5C /* WelcomeTab */,
+				B5ED0382243CC2D700695E5C /* ListTab */,
+				B5ED0384243CC35500695E5C /* ButtonTab */,
 				B5B029082438EEEA00FA5574 /* Assets.xcassets */,
 				B5B0290D2438EEEA00FA5574 /* LaunchScreen.storyboard */,
 				B5B029102438EEEA00FA5574 /* Info.plist */,
@@ -134,6 +149,41 @@
 				B5B029262438EEEA00FA5574 /* Info.plist */,
 			);
 			path = HomeWork1UITests;
+			sourceTree = "<group>";
+		};
+		B5B029322438F3BA00FA5574 /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				B5B029332438F3CF00FA5574 /* MyListView.swift */,
+				B5F2250424397C4E003232F2 /* MyListViewCell.swift */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		B5ED0382243CC2D700695E5C /* ListTab */ = {
+			isa = PBXGroup;
+			children = (
+				B5B029352438F40E00FA5574 /* MyListViewModel.swift */,
+				B5ED037E243CB2BD00695E5C /* CarDetail.swift */,
+				B5B029322438F3BA00FA5574 /* ListView */,
+			);
+			path = ListTab;
+			sourceTree = "<group>";
+		};
+		B5ED0383243CC30400695E5C /* WelcomeTab */ = {
+			isa = PBXGroup;
+			children = (
+				B5ED0385243CC3BF00695E5C /* WelcomeView.swift */,
+			);
+			path = WelcomeTab;
+			sourceTree = "<group>";
+		};
+		B5ED0384243CC35500695E5C /* ButtonTab */ = {
+			isa = PBXGroup;
+			children = (
+				B5ED0380243CC0E900695E5C /* ButtonView.swift */,
+			);
+			path = ButtonTab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,9 +317,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5F2250524397C4E003232F2 /* MyListViewCell.swift in Sources */,
+				B5B029342438F3CF00FA5574 /* MyListView.swift in Sources */,
 				B5B029032438EEE800FA5574 /* AppDelegate.swift in Sources */,
 				B5B029052438EEE800FA5574 /* SceneDelegate.swift in Sources */,
+				B5ED0386243CC3BF00695E5C /* WelcomeView.swift in Sources */,
+				B5B029362438F40E00FA5574 /* MyListViewModel.swift in Sources */,
 				B5B029072438EEE800FA5574 /* ContentView.swift in Sources */,
+				B5ED037F243CB2BD00695E5C /* CarDetail.swift in Sources */,
+				B5ED0381243CC0E900695E5C /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
